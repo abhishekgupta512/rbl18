@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Text to Speech</title>
+  </head>
+  <body class="container mt-5 bg-dark" onload="readtext()">
+    <h1 class="text-light">Text to Speech</h1>
+    <p class="lead text-light mt-4">Select Voice</p>
+    
+    <!-- Select Menu for Voice -->
+    <select id="voices" class="form-select bg-secondary text-light"></select>
+
+    <!-- Range Slliders for Volume, Rate & Pitch -->
+    <div class="d-flex mt-4 text-light">
+      <div>
+        <p class="lead">Volume</p>
+        <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
+        <span id="volume-label" class="ms-2">1</span>
+      </div>
+      <div class="mx-5">
+        <p class="lead">Rate</p>
+        <input type="range" min="0.1" max="10" value="1" id="rate" step="0.1" />
+        <span id="rate-label" class="ms-2">1</span>
+      </div>
+      <div>
+        <p class="lead">Pitch</p>
+        <input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+        <span id="pitch-label" class="ms-2">1</span>
+      </div>
+    </div>
+
+    <!-- Text Area  for the User to Type -->
+    <p class="form-control bg-dark text-light mt-5" id="desc" cols="30" rows="10" placeholder="Type here...">
+        Introducing the newest addition to our smartphone lineup - the [insert smartphone name here].
+         With a stunning [insert screen size and resolution here] display and 
+         powerful [insert processor type and speed here] processor, 
+        this smartphone is designed to provide a top-notch user experience.
+The [insert smartphone name here] comes equipped with a high-quality camera system, 
+featuring [insert number of cameras and megapixel counts here] cameras that capture clear,
+ vibrant photos and videos. With [insert special camera features here], 
+ you can easily capture stunning images in any lighting condition.
+This smartphone also features [insert battery capacity and estimated usage time here] of battery life, 
+ensuring that you can stay connected and productive throughout the day without having to worry about running out of power. 
+And with [insert amount of storage space here] of internal storage, you can store all of your
+ important files, photos, and videos without having to worry about running out of space.
+Designed with both functionality and style in mind, the [insert smartphone name here]
+ features a sleek, modern design that is sure to turn heads.
+  And with a range of customizable features and settings, 
+  you can tailor the phone to meet your specific needs and preferences.
+Whether you're a busy professional, a social media influencer, or a casual user,
+ the [insert smartphone name here] is the perfect choice for anyone who values quality, 
+ performance, and style in their mobile device.
+    </p>
+
+  </body>
+  <script src="./index.js"></script>
+</html>
